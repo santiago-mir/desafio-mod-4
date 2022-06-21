@@ -1,0 +1,18 @@
+.text__title, .text__main-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    margin: 0 0 11px 0;
+}
+
+.text__title{
+    font-size: 32px;
+    margin: 0 
+}
+
+.text__paragraph{
+    font-family: 'Poppins', sans-serif;;
+}
+
+.text--white{
+    color: white;
+}
