@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Section Welcome */
+
+.welcome{
+    height: 100vh;
+    background-color: aqua;  
+}
+
+.welcome__content{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome__conteiner-titles{
+    display: grid;
+    gap: 10px;
+    text-align: center;
+}
+
+/* Section About Me */
+
+.about-me{
+    height: 80vh;
+    background-color: rgb(72, 219, 121);
+    padding: 30px;
+  
+}
+
+.about-me__conteiner-introduction{
+    text-align: center;
+    display: grid;
+    gap: 50px;
+}
+
+/* Section My Services */
+
+.my-services{
+    height: 1325px;
+    overflow: auto;
+}
+
+.my-services__conteiner-title{
+    width: 250px;
+    margin: 40px auto 0px;
+    text-align: center;
+}
+
+.my-services__conteiner-cards{
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 300px;
+    display: grid;
+    place-items: center;
+    gap: 10px;
+    border: solid;
+    
+}
