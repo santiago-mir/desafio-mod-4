@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1500' height='1800' preserveAspectRatio='none' viewBox='0 0 1500 1800'%3e%3cg mask='url(%26quot%3b%23SvgjsMask2983%26quot%3b)' fill='none'%3e%3crect width='1500' height='1800' x='0' y='0' fill='url(%23SvgjsLinearGradient2984)'%3e%3c/rect%3e%3cpath d='M1500 0L1232.92 0L1500 624.44z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M1232.92 0L1500 624.44L1500 1018.78L790.6800000000001 0z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M790.6800000000001 0L1500 1018.78L1500 1117.26L645.1 0z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M645.1 0L1500 1117.26L1500 1293.75L495.42 0z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M0 1800L189.8 1800L0 996.72z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M0 996.72L189.8 1800L662.48 1800L0 914.1800000000001z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M0 914.1800000000001L662.48 1800L815.71 1800L0 883.5200000000001z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M0 883.5200000000001L815.71 1800L1057.29 1800L0 500.0800000000001z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask2983'%3e%3crect width='1500' height='1800' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='50%25' y1='100%25' x2='50%25' y2='0%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient2984'%3e%3cstop stop-color='rgba(114%2c 25%2c 25%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(255%2c 118%2c 118%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+}
+
+
+.porfolio{
+    
+    
+}
+
+.portfolio__conteiner-title{
+   
+    max-width: 300px;
+    margin: 50px auto 50px;
+    text-align: center;
+}
+
+.portfolio__conteiner-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 40px;
+}
+
+@media(min-width:960px){
+    .portfolio__conteiner-cards{
+        flex-direction: row;
+    }
+}
+
+.card{
+  width: 340px;
+  height: 400px;
+  display: grid;
+  gap: 15px;
+  text-align: center;
+  background-color: #e9e0e0;
+}
+
+.card__img-preview{
+ width: 100%;
+ height: 260px;
+ object-fit: cover;
+}
+
+.card__conteiner-content{
+    display: grid;
+    gap: 10px;
+}
+
+.card__link{
+    justify-self: end;
+    
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./components/logo.js"></script>
+    <link rel="stylesheet" href="./components/logo.css" />
+    <script defer src="./components/header.js"></script>
+    <link rel="stylesheet" href="./components/header.css" />
+    <script defer src="./components/footer.js"></script>
+    <link rel="stylesheet" href="./components/footer.css" />
+    <script defer src="./pages/portfolio.js"></script>
+    <link rel="stylesheet" href="./pages/porfolio.css" />
+    <link rel="stylesheet" href="./components/text.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="conteiner--header"></div>
+    <section class="porfolio">
+      <div class="portfolio__conteiner-title">
+        <h1 class="text__main-title">Portfolio</h1>
+      </div>
+      <div class="portfolio__conteiner-cards"></div>
+      <template id="porfolio__template">
+        <div class="card">
+          <img src="" alt="portfolio-img" class="card__img-preview" />
+          <div class="card__conteiner-content">
+            <h2 class="card__title text__card-title"></h2>
+            <p class="card__description text__pharagraph"></p>
+            <a class="card__link text__link--small" href="">Ver mas</a>
+          </div>
+        </div>
+      </template>
+    </section>
+    <div class="conteiner__footer"></div>
+  </body>
+</html>

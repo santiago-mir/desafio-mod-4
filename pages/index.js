@@ -26,7 +26,9 @@ function loadMyServicesData(data) {
 
 function main() {
   const headerContainer = document.querySelector(".conteiner--header");
+  const footerContainer = document.querySelector(".conteiner__footer");
   createHeader(headerContainer);
+  createFooter(footerContainer);
   getMyServicesData();
 }
 

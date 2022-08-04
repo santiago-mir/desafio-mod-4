@@ -6,9 +6,9 @@ function createHeader(container) {
     <div class="header__logo-conteiner"></div>
     <div class="header__menu-conteiner">
       <ul class="header__menu-list">
-        <a class="text__card-title text__link" href="">Portfolio</a>
-        <a class="text__card-title text__link" href="">Servicios</a>
-        <a class="text__card-title text__link" href="">Contacto</a>
+        <a class="text__link" href="./portfolio.html">Portfolio</a>
+        <a class="text__link" href="">Servicios</a>
+        <a class="text__link" href="">Contacto</a>
       </ul>
     </div>
     <img
