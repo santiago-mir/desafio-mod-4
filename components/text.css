@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+.text--white{
+    color: rgb(228, 226, 226);
+}
+
 .text__main-title{
     font-size: 48px;
 }
@@ -11,16 +15,28 @@
     font-size: 32px;
 }
 
-.text__pharagrap{
+.text__pharagraph{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 16px;
     margin: 0;
 }
 
-.text__card-title{
+.text__card-title, .text__button{
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    font-size: 24px;
     margin: 0;
+}
+
+.text__card-title{
+    font-size: 24px;
+}
+
+.text__button{
+    font-size: 16px;
+}
+
+.text__link{
+    text-decoration: none;
+    color: black;
 }

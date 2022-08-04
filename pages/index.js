@@ -15,7 +15,7 @@ function loadMyServicesData(data) {
     var clone = myTemplateEl.content.cloneNode(true);
     var titleEl = (clone.querySelector(".text__card-title").textContent =
       myData[i].fields.title);
-    var descriptionEl = (clone.querySelector(".text__pharagrap").textContent =
+    var descriptionEl = (clone.querySelector(".text__pharagraph").textContent =
       myData[i].fields.description.content[0].content[0].value);
     var imgEl = (clone.querySelector(".card__img").src =
       data.includes.Asset[0].fields.file.url);
