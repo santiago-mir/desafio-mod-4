@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./components/logo.js"></script>
+    <script defer src="./components/header.js"></script>
+    <script defer src="./components/footer.js"></script>
+    <script defer src="./pages/contacto.js"></script>
+    <link rel="stylesheet" href="./components/logo.css" />
+    <link rel="stylesheet" href="./components/header.css" />
+    <link rel="stylesheet" href="./components/footer.css" />
+    <link rel="stylesheet" href="./components/text.css" />
+    <link rel="stylesheet" href="./pages/contacto.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="main">
+      <div class="main__container-header"></div>
+    </section>
+    <section class="contact-me">
+      <div class="contact-me__conteiner">
+        <div class="contact-me__title-conteiner">
+          <h6 class="text__sub-title text--white">Escribime</h6>
+        </div>
+        <form class="form">
+          <label class="form__label text__pharagraph text--white" for="name">
+            NOMBRE
+            <input
+              class="form__input"
+              type="text"
+              name="name"
+              placeholder="Nombre"
+            />
+          </label>
+          <label class="form__label text__pharagraph text--white" for="email">
+            EMAIL
+            <input
+              class="form__input"
+              type="email"
+              name="email"
+              placeholder="Email"
+            />
+          </label>
+          <label class="form__label text__pharagraph text--white" for="message">
+            MENSAJE
+            <textarea class="form__input form__textarea" name="message">
+            </textarea>
+          </label>
+          <div class="conteiner--button">
+            <button class="button text__button text--white">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <div class="conteiner__footer"></div>
+  </body>
+</html>

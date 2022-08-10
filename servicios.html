@@ -10,30 +10,28 @@
     <link rel="stylesheet" href="./components/header.css" />
     <script defer src="./components/footer.js"></script>
     <link rel="stylesheet" href="./components/footer.css" />
-    <script defer src="./pages/portfolio.js"></script>
-    <link rel="stylesheet" href="./pages/porfolio.css" />
+    <script defer src="./pages/servicios.js"></script>
     <link rel="stylesheet" href="./components/text.css" />
+    <link rel="stylesheet" href="./pages/servicios.css" />
     <title>Document</title>
   </head>
   <body>
-    <section class="welcome">
+    <section class="main">
       <div class="conteiner--header"></div>
-      <div class="welcome__conteiner-title">
-        <h1 class="text__main-title">Portfolio</h1>
+      <div class="main__conteiner-title">
+        <h1 class="text__main-title">Servicios</h1>
       </div>
     </section>
-    <section class="porfolio">
-      <div class="portfolio__conteiner-cards"></div>
-      <template id="porfolio__template">
-        <div class="card">
-          <img src="" alt="portfolio-img" class="card__img-preview" />
-          <div class="card__conteiner-content">
-            <h2 class="card__title text__card-title"></h2>
-            <p class="card__description text__pharagraph"></p>
-            <a class="card__link text__link--small" href="">Ver mas</a>
+    <section class="services">
+      <div class="services__conteiner-cards">
+        <template id="services__temp">
+          <div class="card">
+            <img class="card__img" src="" alt="" />
+            <h5 class="text__card-title"></h5>
+            <p class="text__pharagraph"></p>
           </div>
-        </div>
-      </template>
+        </template>
+      </div>
     </section>
     <div class="conteiner__footer"></div>
   </body>

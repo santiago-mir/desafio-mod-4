@@ -7,8 +7,8 @@ function createHeader(container) {
     <div class="header__menu-conteiner">
       <ul class="header__menu-list">
         <a class="text__link" href="./portfolio.html">Portfolio</a>
-        <a class="text__link" href="">Servicios</a>
-        <a class="text__link" href="">Contacto</a>
+        <a class="text__link" href="./servicios.html">Servicios</a>
+        <a class="text__link" href="./contacto.html">Contacto</a>
       </ul>
     </div>
     <img
