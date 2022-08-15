@@ -2,7 +2,7 @@ function createFooter(conteiner) {
   const footerEl = document.createElement("div");
   footerEl.innerHTML = `<footer class="footer">
   <div class="footer__conteiner">
-    <img class="logo--footer" src="./assets/logo.png" alt="" />
+   <div class="footer__conteiner-logo"></div>
     <div class="footer__social-media-conteiner">
       <a class="text__link" href="https://www.instagram.com/santi_miranda1/"
         ><img
@@ -33,5 +33,7 @@ function createFooter(conteiner) {
     </div>
   </div>
 </footer>`;
+  const logoContainerEl = footerEl.querySelector(".footer__conteiner-logo");
+  createLogo(logoContainerEl);
   conteiner.appendChild(footerEl);
 }

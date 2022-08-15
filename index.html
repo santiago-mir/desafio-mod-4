@@ -23,36 +23,26 @@
   </head>
   <body>
     <section class="welcome">
-      <div class="conteiner--header"></div>
-      <div class="welcome__content">
-        <div class="welcome__conteiner-titles">
-          <h1 class="text__main-title">Hola</h1>
-          <h2 class="text__sub-title">Soy Santi</h2>
+      <div class="conteiner__header"></div>
+      <template id="welcome__temp">
+        <div class="welcome__content">
+          <h1 class="text__main-title"></h1>
+          <h2 class="text__sub-title"></h2>
         </div>
-      </div>
+      </template>
     </section>
     <section class="about-me">
-      <div class="about-me__content">
-        <div class="about-me__img-conteiner">
-          <img
-            class="about-me__img"
-            src="./assets/ferenc-almasi-eYpcLDXHVb0-unsplash.jpg"
-            alt=""
-          />
+      <template id="about-me__temp">
+        <div class="about-me__content">
+          <div class="about-me__img-conteiner">
+            <img class="about-me__img" src="" alt="" />
+          </div>
+          <div class="about-me__introduction">
+            <h3 class="text__sub-title text--white"></h3>
+            <p class="text__pharagraph text--white"></p>
+          </div>
         </div>
-        <div class="about-me__introduction">
-          <h3 class="text__sub-title text--white">Soy Santi</h3>
-          <p class="text__pharagraph text--white">
-            Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
-            vehicula velit. Aenean lobortis posuere tristique. Phasellus
-            placerat arcu elementum nisi ultrices cursus. Etiam sit amet aliquet
-            lacus. Integer ut iaculis augue, sit amet tincidunt ex. In eleifend
-            justo et sodales semper. Mauris nec tortor lectus. Curabitur nec
-            ultricies dolor.
-          </p>
-        </div>
-      </div>
+      </template>
     </section>
     <section class="my-services">
       <div class="my-services__conteiner-title">

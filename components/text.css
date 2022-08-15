@@ -41,6 +41,10 @@
     color: black;
 }
 
+.text__link:hover{
+    color: rgb(255, 0, 179)
+}
+
 .text__link--small{
     font-size: 18px;
    

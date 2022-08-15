@@ -1,13 +1,59 @@
-function getMyServicesData() {
+// Welcome-Section //
+
+function getWelcomeData() {
   fetch(
-    "https://cdn.contentful.com/spaces/k1oflyt1vm6c/environments/master/entries?access_token=wTkVwqbJmsQE4MO5YbjyM-Xm9Iovnpm3d5wxzDQtxSs"
+    "https://cdn.contentful.com/spaces/k1oflyt1vm6c/environments/master/entries?access_token=wTkVwqbJmsQE4MO5YbjyM-Xm9Iovnpm3d5wxzDQtxSs&&content_type=welcome"
   )
     .then((response) => response.json())
-    .then((data) => loadMyServicesData(data));
+    .then((data) => loadWelcomeData(data));
 }
 
-function loadMyServicesData(data) {
+function loadWelcomeData(data) {
+  const welcomeTemplateEl = document.querySelector("#welcome__temp");
+  const conteinerEl = document.querySelector(".welcome");
+  var clone = welcomeTemplateEl.content.cloneNode(true);
+  var titleEl = (clone.querySelector(".text__main-title").textContent =
+    data.items[0].fields.title);
+  var subTitleEl = (clone.querySelector(".text__sub-title").textContent =
+    data.items[0].fields.subtitle);
+  conteinerEl.appendChild(clone);
+}
+
+// About-me Section //
+
+function getAboutMeData() {
+  fetch(
+    "https://cdn.contentful.com/spaces/k1oflyt1vm6c/environments/master/entries?access_token=wTkVwqbJmsQE4MO5YbjyM-Xm9Iovnpm3d5wxzDQtxSs&&content_type=presentacion"
+  )
+    .then((response) => response.json())
+    .then((data) => loadAboutMeData(data));
+}
+
+function loadAboutMeData(data) {
   console.log(data);
+  const aboutMeTemplateEl = document.querySelector("#about-me__temp");
+  const conteinerEl = document.querySelector(".about-me");
+  var clone = aboutMeTemplateEl.content.cloneNode(true);
+  var titleEl = (clone.querySelector(".text__sub-title").textContent =
+    data.items[0].fields.titulo);
+  var descriptionEl = (clone.querySelector(".text__pharagraph").textContent =
+    data.items[0].fields.descripcion);
+  var imgEl = (clone.querySelector(".about-me__img").src =
+    data.includes.Asset[0].fields.file.url);
+  conteinerEl.appendChild(clone);
+}
+
+// Services Section //
+
+function getServicesData() {
+  fetch(
+    "https://cdn.contentful.com/spaces/k1oflyt1vm6c/environments/master/entries?access_token=wTkVwqbJmsQE4MO5YbjyM-Xm9Iovnpm3d5wxzDQtxSs&&content_type=desafioModulo4"
+  )
+    .then((response) => response.json())
+    .then((data) => loadServicesData(data));
+}
+
+function loadServicesData(data) {
   const myData = data.items;
   var myContainerEl = document.querySelector(".my-services__conteiner-cards");
   var myTemplateEl = document.querySelector("#my-services__temp");
@@ -25,11 +71,13 @@ function loadMyServicesData(data) {
 }
 
 function main() {
-  const headerContainer = document.querySelector(".conteiner--header");
+  const headerContainer = document.querySelector(".conteiner__header");
   const footerContainer = document.querySelector(".conteiner__footer");
   createHeader(headerContainer);
   createFooter(footerContainer);
-  getMyServicesData();
+  getWelcomeData();
+  getAboutMeData();
+  getServicesData();
 }
 
 main();

@@ -18,12 +18,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.welcome__conteiner-titles{
-    display: grid;
-    gap: 10px;
-    text-align: center;
+    flex-direction: column;
+    gap: 5px;
 }
 
 /* Section About Me */

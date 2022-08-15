@@ -33,10 +33,36 @@
 }
 }
 
-.header__menu-list{
+.header__menu-nav{
     width: 450px;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: space-between;
 }
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: grey;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.dropdown-menu__button{
+    height: 64px;
+    margin: 30px 30px 0 0;
+    justify-self: right;
+    width: 64px;
+}
+
+
+.dropdown-menu__list{
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+    
+};
