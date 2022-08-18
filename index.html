@@ -16,6 +16,8 @@
     <script defer src="./components/header.js"></script>
     <link rel="stylesheet" href="./components/header.css" />
     <script defer src="./components/footer.js"></script>
+    <link rel="stylesheet" href="./components/form.css" />
+    <script defer src="./components/form.js"></script>
     <link rel="stylesheet" href="./components/footer.css" />
     <script defer src="./pages/index.js"></script>
     <link rel="stylesheet" href="./pages/index.css" />
@@ -23,9 +25,8 @@
   </head>
   <body>
     <section class="welcome">
-      <div class="conteiner__header"></div>
       <template id="welcome__temp">
-        <div class="welcome__content">
+        <div class="welcome__conteiner">
           <h1 class="text__main-title"></h1>
           <h2 class="text__sub-title"></h2>
         </div>
@@ -33,11 +34,11 @@
     </section>
     <section class="about-me">
       <template id="about-me__temp">
-        <div class="about-me__content">
+        <div class="about-me__conteiner">
           <div class="about-me__img-conteiner">
             <img class="about-me__img" src="" alt="" />
           </div>
-          <div class="about-me__introduction">
+          <div class="about-me__text-conteiner">
             <h3 class="text__sub-title text--white"></h3>
             <p class="text__pharagraph text--white"></p>
           </div>
@@ -45,10 +46,10 @@
       </template>
     </section>
     <section class="my-services">
-      <div class="my-services__conteiner-title">
+      <div class="my-services__title-conteiner">
         <h4 class="text__sub-title">Mis Servicios</h4>
       </div>
-      <div class="my-services__conteiner-cards">
+      <div class="my-services__cards-conteiner">
         <template id="my-services__temp">
           <div class="card">
             <img class="card__img" src="" alt="" />
@@ -58,41 +59,7 @@
         </template>
       </div>
     </section>
-    <section class="contact-me">
-      <div class="contact-me__conteiner">
-        <div class="contact-me__title-conteiner">
-          <h6 class="text__sub-title text--white">Escribime</h6>
-        </div>
-        <form class="form">
-          <label class="form__label text__pharagraph text--white" for="name">
-            NOMBRE
-            <input
-              class="form__input"
-              type="text"
-              name="name"
-              placeholder="Nombre"
-            />
-          </label>
-          <label class="form__label text__pharagraph text--white" for="email">
-            EMAIL
-            <input
-              class="form__input"
-              type="email"
-              name="email"
-              placeholder="Email"
-            />
-          </label>
-          <label class="form__label text__pharagraph text--white" for="message">
-            MENSAJE
-            <textarea class="form__input form__textarea" name="message">
-            </textarea>
-          </label>
-          <div class="conteiner--button">
-            <button class="button text__button text--white">Enviar</button>
-          </div>
-        </form>
-      </div>
-    </section>
-    <div class="conteiner__footer"></div>
+    <section class="contact-me"></section>
+    <section class="section-footer"></section>
   </body>
 </html>

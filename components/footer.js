@@ -1,6 +1,7 @@
 function createFooter(conteiner) {
   const footerEl = document.createElement("div");
-  footerEl.innerHTML = `<footer class="footer">
+  footerEl.innerHTML = `
+  <footer class="footer">
   <div class="footer__conteiner">
    <div class="footer__conteiner-logo"></div>
     <div class="footer__social-media-conteiner">

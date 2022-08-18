@@ -1,6 +1,6 @@
 function getServicesData() {
   fetch(
-    "https://cdn.contentful.com/spaces/k1oflyt1vm6c/environments/master/entries?access_token=wTkVwqbJmsQE4MO5YbjyM-Xm9Iovnpm3d5wxzDQtxSs"
+    "https://cdn.contentful.com/spaces/k1oflyt1vm6c/environments/master/entries?access_token=wTkVwqbJmsQE4MO5YbjyM-Xm9Iovnpm3d5wxzDQtxSs&&content_type=desafioModulo4"
   )
     .then((response) => response.json())
     .then((data) => loadServicesData(data));

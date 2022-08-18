@@ -4,8 +4,8 @@ function createHeader(container) {
   <header class="header">
       <div class="header__main-conteiner">
         <div class="header__logo-conteiner"></div>
-        <div class="header__menu-conteiner">
-          <nav class="header__menu-nav">
+        <div class="header__nav-conteiner">
+          <nav class="header__nav">
             <a class="text__link" href="./portfolio.html">Portfolio</a>
             <a class="text__link" href="./servicios.html">Servicios</a>
             <a class="text__link" href="./contacto.html">Contacto</a>
@@ -14,11 +14,11 @@ function createHeader(container) {
         <img
           src="./assets/menu.png"
           alt="menu-mobile"
-          class="header__menu-mobile"
+          class="menu-mobile"
         />
-        <div class="dropdown-menu">
+        <div class="menu-mobile__conteiner">
           <img
-            class="dropdown-menu__button"
+            class="menu-mobile__close-button"
             src="./assets/close.png"
             alt="close-button"
           />
@@ -32,15 +32,16 @@ function createHeader(container) {
     </header>
     `;
   const logoContainer = componentEl.querySelector(".header__logo-conteiner");
+  const openMenuEl = componentEl.querySelector(".menu-mobile");
+  const closeMenuEl = componentEl.querySelector(".menu-mobile__close-button");
+  const menuEl = componentEl.querySelector(".menu-mobile__conteiner");
   createLogo(logoContainer);
-  const openMenuEl = componentEl.querySelector(".header__menu-mobile");
-  const closeMenuEl = componentEl.querySelector(".dropdown-menu__button");
-  const dropDownMenuEl = componentEl.querySelector(".dropdown-menu");
   openMenuEl.addEventListener("click", () => {
-    dropDownMenuEl.style.display = "grid";
+    menuEl.style.display = "grid";
   });
   closeMenuEl.addEventListener("click", () => {
-    dropDownMenuEl.style.display = "";
+    menuEl.style.display = "";
   });
+
   container.appendChild(componentEl);
 }

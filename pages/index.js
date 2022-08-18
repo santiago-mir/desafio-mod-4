@@ -30,7 +30,6 @@ function getAboutMeData() {
 }
 
 function loadAboutMeData(data) {
-  console.log(data);
   const aboutMeTemplateEl = document.querySelector("#about-me__temp");
   const conteinerEl = document.querySelector(".about-me");
   var clone = aboutMeTemplateEl.content.cloneNode(true);
@@ -55,7 +54,7 @@ function getServicesData() {
 
 function loadServicesData(data) {
   const myData = data.items;
-  var myContainerEl = document.querySelector(".my-services__conteiner-cards");
+  var myContainerEl = document.querySelector(".my-services__cards-conteiner");
   var myTemplateEl = document.querySelector("#my-services__temp");
   for (let i = 0; i < myData.length; i++) {
     var clone = myTemplateEl.content.cloneNode(true);
@@ -71,10 +70,12 @@ function loadServicesData(data) {
 }
 
 function main() {
-  const headerContainer = document.querySelector(".conteiner__header");
-  const footerContainer = document.querySelector(".conteiner__footer");
-  createHeader(headerContainer);
-  createFooter(footerContainer);
+  const headerConteiner = document.querySelector(".welcome");
+  const formConteiner = document.querySelector(".contact-me");
+  const footerConteiner = document.querySelector(".section-footer");
+  createHeader(headerConteiner);
+  createForm(formConteiner);
+  createFooter(footerConteiner);
   getWelcomeData();
   getAboutMeData();
   getServicesData();
