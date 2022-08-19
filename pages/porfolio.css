@@ -36,8 +36,9 @@ body{
 
 
 .porfolio{
-    
-    
+    min-height: 1400px;
+    overflow: auto;    
+
 }
 
 @media(min-width:960px){
@@ -65,8 +66,9 @@ body{
 }
 
 .card{
-  width: 300px;
-  height: 400px;
+  min-width: 285px;  
+  max-width: 300px;
+  height: 425px;
   display: grid;
   gap: 10px;
   text-align: center;
@@ -92,6 +94,6 @@ body{
 
 .card__link{
     justify-self: end;
-    
+    margin-right: 5px;
     
 }

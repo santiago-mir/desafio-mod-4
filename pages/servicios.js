@@ -24,7 +24,7 @@ function loadServicesData(data) {
 }
 
 function main() {
-  const headerConteinerEl = document.querySelector(".conteiner--header");
+  const headerConteinerEl = document.querySelector(".conteiner__header");
   const footerConteinerEl = document.querySelector(".conteiner__footer");
   createHeader(headerConteinerEl);
   createFooter(footerConteinerEl);
