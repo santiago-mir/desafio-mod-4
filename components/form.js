@@ -1,3 +1,22 @@
+function postForm(formEl) {
+  formEl.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const formData = new FormData(formEl);
+    const formEntries = Object.fromEntries(formData.entries());
+    console.log(formEntries);
+    fetch("https://apx-api.vercel.app/api/utils/dwf", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({
+        to: "san_chan97@hotmail.com",
+        message: `Nombre: ${formEntries.name}, Email: ${formEntries.email}, Mensaje: ${formEntries.message}`,
+      }),
+    }).then((data) => data.json());
+
+    formEl.reset();
+  });
+}
+
 function createForm(conteiner) {
   const componentEl = document.createElement("div");
   componentEl.innerHTML = `
@@ -34,5 +53,7 @@ function createForm(conteiner) {
         </form>
       `;
   componentEl.className = "contact-me__conteiner";
+  const formEl = componentEl.querySelector(".form");
+  postForm(formEl);
   conteiner.appendChild(componentEl);
 }
