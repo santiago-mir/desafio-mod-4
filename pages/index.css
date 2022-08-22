@@ -11,7 +11,7 @@ body{
 
 .welcome{
     height: 100vh;
-    background-image: url("/assets/bg_bggenerator_com.png");}
+    background-image: url("../assets/bg_bggenerator_com.png");}
 
 .welcome__conteiner{
     height: 80vh;
@@ -143,5 +143,5 @@ body{
     padding: 20px; 
 }
 
-/* Footer */
+
 
