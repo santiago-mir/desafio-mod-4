@@ -25,8 +25,8 @@ function loadPortfolioData(data) {
 }
 
 function main() {
-  const headerConteinerEl = document.querySelector(".welcome");
-  const footerConteinerEl = document.querySelector(".footer-section");
+  const headerConteinerEl = document.querySelector(".conteiner__header");
+  const footerConteinerEl = document.querySelector(".conteiner__footer");
   createHeader(headerConteinerEl);
   createFooter(footerConteinerEl);
   getPortfolioData();
